@@ -35,8 +35,8 @@ public class tekkitlimits_Listener
     Block b = event.getBlock();
     int id = b.getTypeId();
     byte subid = b.getData();
-    //if (p.hasPermission("tekkitlimits.debug")) {
-    if(event.getPlayer().isOp()){
+    if (p.hasPermission("tekkitlimits.debug")) {
+    //if(event.getPlayer().isOp()){
       p.sendMessage(prefix + ChatColor.RED + "DEBUG: Item id: " + id + " SubID: " + subid);
     }
 
